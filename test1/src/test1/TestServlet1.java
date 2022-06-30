@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class TestServlet1 V1.0
+ * Servlet implementation class TestServlet1 V1.1
  */
 public class TestServlet1 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -26,7 +26,7 @@ public class TestServlet1 extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// 天気をランダムで決定
-	    String[] weatherArray = { "晴れ", "曇り", "雨" };
+	    String[] weatherArray = { "晴れ", "曇り", "雨です" };
 	    int index = (int) (Math.random() * 3);
 	    String weather = weatherArray[index];
 
